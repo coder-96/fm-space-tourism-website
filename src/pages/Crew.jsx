@@ -2,17 +2,23 @@ import { useState } from "react";
 import { useEffect } from "react";
 import db from "../data.json";
 
+import img1 from "../assets/crew/image-douglas-hurley";
+import img2 from "../assets/crew/image-mark-shuttleworth.png";
+import img3 from "../assets/crew/image-victor-glover.png";
+import img4 from "../assets/crew/image-anousheh-ansari.png";
+
 function Crew() {
+    let images = [img1, img2, img3, img4];
+
     useEffect(() => {
         let linkItem = document.querySelector("#crew");
         linkItem.classList.add("active");
         linkItem.classList.remove("hover_effect");
-        
+
         let dotItem = document.querySelector(`#crew-${crew.id}`);
         dotItem.classList.add("dot-active");
         dotItem.classList.remove("dot-hover");
 
-        
         let linkItem2 = document.querySelector("#crew2");
         linkItem2.classList.add("active");
         linkItem2.classList.remove("hover_effect");
@@ -69,15 +75,34 @@ function Crew() {
                                         key={item.id}
                                         id={`crew-${item.id}`}
                                         onClick={() => handleClick(item)}
-                                    >
-                                    </li>
+                                    ></li>
                                 );
                             })}
                         </ul>
                     </div>
 
                     <div className="crew-pic">
-                        <img src={`../src/${crew.image}`} alt="crew-member" />
+                        {/* <img src={`../src/${crew.image}`} alt="crew-member" /> */}
+                        <img
+                            className={crew.id === 0 ? "" : "hidden"}
+                            src={crew.id === 0 ? images[0] : null}
+                            alt="crew-member"
+                        />
+                        <img
+                            style={crew.id === 1 ? null : { display: "none" }}
+                            src={crew.id === 1 ? images[1] : null}
+                            alt="crew-member"
+                        />
+                        <img
+                            style={crew.id === 2 ? null : { display: "none" }}
+                            src={crew.id === 2 ? images[2] : null}
+                            alt="crew-member"
+                        />
+                        <img
+                            style={crew.id === 3 ? null : { display: "none" }}
+                            src={crew.id === 3 ? images[3] : null}
+                            alt="crew-member"
+                        />
                     </div>
                 </div>
             </div>

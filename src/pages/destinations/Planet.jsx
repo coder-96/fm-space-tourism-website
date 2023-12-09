@@ -112,7 +112,7 @@ function Planet() {
                                         key={index}
                                         id={`${item.name}`}
                                     >
-                                        <Link to={`/destination/${item.name}`}>
+                                        <Link to={`/fm-space-tourism-website/destination/${item.name}`}>
                                             <span>{item.name}</span>
                                         </Link>
                                     </li>
