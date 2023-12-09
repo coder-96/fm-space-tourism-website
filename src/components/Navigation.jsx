@@ -69,7 +69,7 @@ function Navigation() {
                 </div>
                 <ul className="nav-list-drop">
                     <li className="nav-item-drop hover_effect" id="home2">
-                        <NavLink className="nav-link-drop" to="/">
+                        <NavLink className="nav-link-drop" to="/home">
                             <span className="nav-num-drop">00</span>
                             <span>Home</span>
                         </NavLink>
