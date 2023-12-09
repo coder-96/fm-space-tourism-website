@@ -14,12 +14,12 @@ function App() {
                 <Router>
                     <Navigation />
                     <Routes>
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/destination" element={<Destination />}>
+                        <Route path="/fm-space-tourism-website" element={<Home />} />
+                        <Route path="/fm-space-tourism-website/destination" element={<Destination />}>
                             <Route path=":postSlug" element={<Planet />} />
                         </Route>
-                        <Route path="/crew" element={<Crew />} />
-                        <Route path="/tech" element={<Technology />} />
+                        <Route path="/fm-space-tourism-website/crew" element={<Crew />} />
+                        <Route path="/fm-space-tourism-website/tech" element={<Technology />} />
                     </Routes>
                 </Router>
             </div>
