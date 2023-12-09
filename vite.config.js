@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/https://coder-96.github.io/"
+  base: "/fm-space-tourism-website/home/"
 })
