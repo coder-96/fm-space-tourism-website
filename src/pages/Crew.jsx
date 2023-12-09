@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import db from "../data.json";
 
-import img1 from "../assets/crew/image-douglas-hurley";
+import img1 from "../assets/crew/image-douglas-hurley.png";
 import img2 from "../assets/crew/image-mark-shuttleworth.png";
 import img3 from "../assets/crew/image-victor-glover.png";
 import img4 from "../assets/crew/image-anousheh-ansari.png";
