@@ -2,7 +2,7 @@
   "name": "vite-client",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://coder-96.github.io/home/",
+  "homepage": "https://coder-96.github.io/fm-space-tourism-website/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
