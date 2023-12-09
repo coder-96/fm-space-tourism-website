@@ -35,7 +35,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="s-child wrap">
-                    <a className="button-homepage" href="/destination/Moon">Explore</a>
+                    <a className="button-homepage" href="fm-space-tourism-website/destination/Moon">Explore</a>
                 </div>
             </div>
         </main>
