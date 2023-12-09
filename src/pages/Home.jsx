@@ -1,5 +1,6 @@
 // import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -35,7 +36,8 @@ function Home() {
                     </p>
                 </div>
                 <div className="s-child wrap">
-                    <a className="button-homepage" href="fm-space-tourism-website/destination/Moon">Explore</a>
+                    {/* <a className="button-homepage" href="fm-space-tourism-website/destination/Moon">Explore</a> */}
+                    <Link className="button-homepage" to="fm-space-tourism-website/destination/Moon">Explore</Link>
                 </div>
             </div>
         </main>
