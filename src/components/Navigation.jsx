@@ -28,13 +28,13 @@ function Navigation() {
 
     return (
         <header className="navbar">
-            <NavLink className="nav-brand" to="/">
+            <NavLink className="nav-brand" to="/home">
                 <img src={siteLogo} alt="logo-svg" />
             </NavLink>
             <hr />
             <ul className="nav-list">
                 <li className="nav-item hover_effect"  id="home">
-                    <NavLink className="nav-link" to="/">
+                    <NavLink className="nav-link" to="/home">
                         <span className="nav-num">00</span>
                         <span>Home</span>
                     </NavLink>
